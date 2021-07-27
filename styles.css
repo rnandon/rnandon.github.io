@@ -1,0 +1,26 @@
+/* Universal formatting */
+
+/* Header section formatting */
+#header {
+    color: red
+}
+
+/* Home section formatting */
+#home {
+    color: blue
+}
+
+/* About section formatting */
+#about {
+    color: green
+}
+
+/* Project section formatting */
+#projects {
+    color: purple
+}
+
+/* Contact section formatting */
+#contact {
+    color: black
+}
