@@ -8,17 +8,17 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<div class='navbar header_font'>
+<div class='navbar subheader_font'>
     <a href='#home'>Home</a>
     <a href='#about'>About</a>
     <a href='#projects'>Projects</a>
     <a href='#contact'>Contact</a>
 </div>
 <section id='home' class='header_font'>
-    <div id='name'>
+    <div>
         <!-- Home: centered box with a very quick blurb about who I am and what I do -->
-        <h1>RYAN NANCE-DONALDSON</h1>
-        <h3>FULL STACK SOFTWARE DEVELOPER</h3>
+        <h1 id='name'>RYAN  NANCE-DONALDSON</h1>
+        <h3>FULL  STACK  SOFTWARE  DEVELOPER</h3>
     </div>
 </section>
 <section id='about' class='header_font'>
@@ -44,45 +44,27 @@
 <section id='projects' class='header_font'>
     <!-- Pictures of different projects, with links to a demo (to come later) and the github repo -->
     <!-- Later, add a description when the card is hovered over -->
-    <!-- Layout: on desktop, 3 projects across, on mobile one -->
-    <h2>Projects</h2>
+    <!-- Layout: Title above, pic on left, description and links on right -->
+    <h1>Work</h1>
     <div id='project_row1' class="project_row content_font">
-        <div id='project1' class="project_left">
-            <div class="project_block"></div>
-            <button type='button'>Demo</button>
-            <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
-        </div>
-        <div id='project2' class="project_center">
-            <div class="project_block"></div>
-            <button type='button'>Demo</button>
-            <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
-        </div>
-        <div id='project3' class="project_right">
-            <div class="project_block"></div>
-            <button type='button'>Demo</button>
-            <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
+        <div class='project'>
+            <!-- Left slot: picture -->
+            <div class='project_img'>
+                <div class='project_block'></div>
+            </div>
+            <!-- Right slot: description -->
+            <div class='project_description'>
+                <h2>Project name</h2>
+                <p>Idk some description here</p>
+                <button type='button'>Demo</button>
+                <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
+            </div>
         </div>
     </div>
-    <div id='project_row2' class="project_row content_font">
-        <div id='project4' class="project_left">
-            <div class="project_block"></div>
-            <button type='button'>Demo</button>
-            <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
-        </div>
-        <div id='project5' class="project_center">
-            <div class="project_block"></div>
-            <button type='button'>Demo</button>
-            <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
-        </div>
-        <div id='project6' class="project_right">
-            <div class="project_block"></div>
-            <button type='button'>Demo</button>
-            <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
-        </div>
     </div>
 </section>
 <section id='contact'>
-    <div class='header_font'>
+    <div class='subheader_font'>
         <h3>Contact me: </h3>
         <p>Ryan Nance-Donaldson<br>Full Stack Developer<br>ryan@ryannd.com<br>
     </div>
