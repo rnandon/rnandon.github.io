@@ -41,10 +41,7 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 17px;
-    width: 24.9%;
-    border-style: groove;
-    border-width: 1px;
-    border-color: #ffffff;
+    width: 25%;
 }
 
 .navbar a:hover {
