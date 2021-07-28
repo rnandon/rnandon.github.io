@@ -8,11 +8,15 @@ div {
 }
 
 .header_font {
+    font-weight: bolder;
     font-family: garamond;
+    text-align: center;
 }
 
 .content_font {
+    font-weight: normal;
     font-family: tahoma;
+    text-align: left;
 }
 
 body {
