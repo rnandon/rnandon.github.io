@@ -7,12 +7,26 @@ div {
     padding: 0px 0px 0px 0px;
 }
 
+.header_font {
+    font-family: garamond;
+}
+
+.content_font {
+    font-family: tahoma;
+}
+
+body {
+    background-color: #A5ABBD;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Navbar formatting */
 .navbar {
     overflow: hidden;
-    background-color: #333;
-    position: fixed;
+    background-color: #00284d;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,22 +41,37 @@ div {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 17px;
-    width: 25%;
+    width: 24.9%;
+    border-style: groove;
+    border-width: 1px;
+    border-color: #ffffff;
 }
 
 .navbar a:hover {
-    background: #ddd;
+    background: #6f94dc;
     color: black;
 }
 
 
 /* Home section formatting */
 #home {
+    margin-left: 0px;
     padding-top: 40px;
     text-align: center;
-    background-color: navy;
-    color: lightgray;
+    background-color: #00284d;
+    color: #f2f2f2;
     width: 100%;
+    padding-left: 0px;
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+#name {
+    padding-top: 40px;
+    text-align: center;
+    background-color: #00284d;
+    color: #f2f2f2;
+    width: inherit;
 }
 
 /* About section formatting */
@@ -123,8 +152,14 @@ div {
 
 /* Contact section formatting */
 #contact {
-    color: black;
+    padding-top: 100px;
     text-align: center;
+    background-color: #00284d;
+    color: #f2f2f2;
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% calc(100% - 200px), 100% 100%, 0 100%);
 }
 
 /* Responsive formatting */
