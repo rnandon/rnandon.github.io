@@ -159,9 +159,9 @@ body {
 }
 
 /* Responsive formatting */
-@media screen and (max-width: 580px) {
+/* @media screen and (max-width: 580px) {
     .navbar {
-      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+      padding: 20px 10px !important; 
     }
     .navbar a {
       float: none;
@@ -171,4 +171,4 @@ body {
     .navbar-right {
       float: none;
     }
-  }
+  } */
