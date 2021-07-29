@@ -1,10 +1,10 @@
 /* Universal formatting */
-h1 {
-    text-align: center;
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
-div {
-    padding: 0px 0px 0px 0px;
+h1 {
+    text-align: center;
 }
 
 .header_font {
@@ -32,8 +32,29 @@ body {
     background-color: #F1F1E6;
     padding: 0;
     margin: 0;
+    height: auto;
+    display: block;
 }
 
+.generic_color {
+    background-color: #A4ABBD;
+}
+
+.lrborders {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    margin-top: -200px;
+    margin-bottom: -200px;
+    padding-top: 300px;
+}
+
+.separator_bar {
+    width: 75%;
+    margin-left: 12.5%;
+    border-bottom-width: 1px;
+    border-bottom: 4px solid #111111;
+}
 
 /* Navbar formatting */
 .navbar {
@@ -58,25 +79,24 @@ body {
 }
 
 .navbar a:hover {
-    background: #6f94dc;
+    background: #A4ABBD;
     color: black;
 }
 
 
 /* Home section formatting */
 #home {
-    margin-left: 0px;
-    padding-top: 1px;
+    display: block;
     text-align: center;
     background-color: #00284d;
     color: #f2f2f2;
-    width: 100%;
-    padding-left: 0px;
+    padding-top: 30px;
     padding-bottom: 100px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 75px));
 }
 
 #name {
+    display: block;
     margin-top: 25px;
     text-align: center;
     background-color: #00284d;
@@ -86,115 +106,109 @@ body {
 
 /* About section formatting */
 #about {
-    padding-top: 100px;
+    display: block;
+    float: bottom;
     color: darkslategray;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 #about_contents {
-    background-color: #D9A21B;
-    border-radius: 20px;
+    display: block;
+    float: left;
+    background-color: #F1F1E6;
+    border-radius: 15px;
     color: black;
-    width: 55%;
-    float: right;
+    width: 45%;
     height: auto;
-    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 20px 20px 25px 1px #111111;
 }
 
 #about_picture {
+    display: inline-block;
     width: 35%;
-    float: left;
-    padding-left: 5%;
+    margin-left: 5%;
     height: auto;
 }
 
+.about_font {
+    font-weight: normal;
+    font-family: tahoma;
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+}
+
 .profile_picture {
+    max-height: 400px;
     max-width: 100%;
-    height: auto;
 }
 
 /* Project section formatting */
 #projects {
-    padding-top: 40px;
+    display: block;
     /*background-color: dimgray;
     color: floralwhite;*/
     width: 100%;
-    height: 500px;
+    height: auto;
+    padding-bottom: 100px;
 }
 
 .project {
+    display: block;
+    float: bottom;
     margin-left: 10%;
-    float: left;
+    margin-bottom: 50px;
     width: 80%;
+    height: auto;
 }
 
 .project_img {
-    margin-left: 5%;
-    float: left;
-    width: 40%;
+    display: inline-block;
+    position: top;
+    margin-left: 1%;
+    max-width: 40%;
     height: auto;
 }
 
 .project_description {
+    margin-top: 0px;
+    display: block;
+    float: right;
+    position: top;
     text-align: left;
-    margin-left: 5%;
-    float: left;
-    width: 50%;
+    width: 45%;
 }
 
 .project_row {
-    /* background-color: blue;
-    color: blue; */
+    display: block;
     max-width: 100%;
-    float:unset;
     padding-top: 25px;
 }
-
-.project_center {
-    /* background-color: gray;
-    color: bisque; */
-    width: 30%;
-    float:left;
-    padding-left: 2.5%;
-}
-
-.project_left {
-    /* background-color: gray;
-    color: bisque; */
-    width: 30%;
-    float: left;
-    padding-left: 2.5%;
-}
-
-.project_right {
-    /* background-color: gray;
-    color: bisque; */
-    width: 30%;
-    float: left;
-    padding-left: 2.5%;
-}
-
 
 .project_block {
     background-color: black;
     color: white;
     width: 100%;
-    height: 100px;
+    height: auto;
 }
 
 /* Contact section formatting */
 
 
 #contact {
+    position: bottom;
     padding-top: 100px;
+    margin-top: 100px;
     text-align: center;
     background-color: #00284d;
     color: #f2f2f2;
     width: 100%;
     padding-left: 0px;
     padding-bottom: 5px;
-    clip-path: polygon(0 0, 100% calc(0% + 100px), 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% calc(0% + 75px), 100% 100%, 0 100%);
 }
 
 .contact_details {
@@ -204,7 +218,7 @@ body {
 }
 
 /* Responsive formatting */
-/* @media screen and (max-width: 580px) {
+@media screen and (max-width: 900px) {
     .navbar {
       padding: 20px 10px !important; 
     }
@@ -216,4 +230,20 @@ body {
     .navbar-right {
       float: none;
     }
-  } */
+
+    #about {
+        float: none;
+    }
+
+    #about_content {
+        float: bottom;
+    }
+
+    #projects {
+        float: none;
+    }
+
+    .project_description {
+        float: bottom;
+    }
+}

@@ -21,7 +21,7 @@
         <h3>FULL  STACK  SOFTWARE  DEVELOPER</h3>
     </div>
 </section>
-<section id='about' class='header_font'>
+<section id='about' class='header_font generic_color lrborders'>
     <!-- About: Meat and potatoes, a more thorough look at who I am -->
     <!-- Split in two sections: Pic on the left (or under if mobile), About label and text on the right -->
     <!-- Learn more button: call to action, go to contact info -->
@@ -29,8 +29,8 @@
         <img src='images\about_pic.jpg' class='profile_picture'></img>    
     </div>
     <div id='about_contents'>
-        <h3 class='header_font'>About</h3>
-        <p class='content_font'>Hi, I'm Ryan! I'm glad you're here.<br> <br>
+        <h3 class='header_font separator_bar'>About</h3>
+        <p class='about_font'>Hi, I'm Ryan! I'm glad you're here.<br> <br>
         I'm a full stack developer with an insatiable desire to learn and create.
         Whether it's food, music, or tech, I always take the same approach- 
         start with the basics. I make sure that all the needs are met, then
@@ -41,33 +41,45 @@
         would like to get to know me better, make sure to reach out <a href='#contact'>here.</a></p>
     </div>
 </section>
-<section id='projects' class='header_font'>
+<section id='projects' class='header_font generic_color lrborders'>
     <!-- Pictures of different projects, with links to a demo (to come later) and the github repo -->
     <!-- Later, add a description when the card is hovered over -->
     <!-- Layout: Title above, pic on left, description and links on right -->
-    <h1>Work</h1>
-    <div id='project_row1' class="project_row content_font">
+    <h1 class='separator_bar'>Work</h1>
+    <div class="project_row content_font">
         <div class='project'>
             <!-- Left slot: picture -->
-            <div class='project_img'>
-                <div class='project_block'></div>
-            </div>
+            <img class='project_img' src='images\battleship.png'></img>
             <!-- Right slot: description -->
             <div class='project_description'>
-                <h2>Project name</h2>
-                <p>Idk some description here</p>
-                <button type='button'>Demo</button>
+                <h2>Battleship</h2>
+                <p>A console based implementation of the classic game Battleship.
+                Features automatic ship placement, screen hiding between turns, and a
+                dynamic display to show the state of the board. Built in python.
+                Many more great features to come as work continues!</p>
+                <button type='button' onclick='window.location.href="https://github.com/rnandon/Battleship";'>Github</button>
+            </div>
+        </div>
+    </div>
+    <div class="project_row content_font">
+        <div class='project'>
+            <!-- Left slot: picture -->
+            <img class='project_img' src='images\coming_soon.jpg'></img>
+            <!-- Right slot: description -->
+            <div class='project_description'>
+                <h2>Under Development</h2>
+                <p>Many new projects coming soon!<br>In the meantime, take a look at some of my other work on Github!</p>
                 <button type='button' onclick='window.location.href="https://github.com/rnandon";'>Github</button>
             </div>
         </div>
     </div>
     </div>
 </section>
-<section id='contact'>
+<div id='contact'>
     <div class='subheader_font'>
         <h3>Contact me: </h3>
         <p>Ryan Nance-Donaldson<br>Full Stack Developer<br>ryan@ryannd.com<br>
     </div>
-</section>
+</div>
 </body>
 </html>
